@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <DOCTYPE html>
+        <html>
+        <head>
+            <title>Survey Form</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        
+        <body>
+            <div class="container">
+        
+         <header>
+            <h1 id="title"> APC Employee Survey Form </h1>
+            <p id="description"> 
+                <i> We value your feedback. </i> </p>
+         </header>
+        
+        <form id= "survey-form">  
+         <div class="form-group">
+           <label id="name-label" for="name"> Name 
+          </label>
+          <input type="text" id="name" name="name"  required placeholder="Enter your full name here"/>
+          </div>
+
+          <div class="form-group">
+          <label id="email-label" for="email"> Email 
+          </label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email address"/>
+         </div>
+
+         <div class="form-group">
+          <label id="number-label" for="duration"> At what age did you start working for APC?
+          </label>
+          <input type="number" id="number" name="age" required placeholder="Enter age in numbers only"/>
+         </div>
+
+         <div class="form-group">
+          <label for="dropdown-selector-department">Which department of APC do you work under?</label>
+          <select name="dropdown-selector-department" id="dropdown">
+          <option value="department">Select Department</option>
+          <option value="department">Customer Support </option>
+          <option value="department">Human Resources</option>
+          <option value="department">IT and Logistics</option>
+          <option value="department">Marketing</option>
+          <option value="department">Operations</option>
+         <option value="department">Procurement</option>
+          <option value="department">Quality Assuarance</option>
+         </select>
+         </div>
+
+         <div class="form-group">
+         <p>Select your direct supervisor</p>
+         <input type="radio" name="supervisor" value="head of operations"/>
+         <label for="supervisor1"> Head of Operations</label><br>
+         <input type="radio" name="supervisor" value="head of hr"/>
+         <label for="supervisor2"> Head of HR</label><br>
+         <input type="radio" name="supervisor" value="other"/>
+         <label for="supervisor3"> Other (specify here) </label>
+         <input type="text" name="other" value="" />
+         </div>
+        
+         <div class="form-group">
+          <p>What do you think would increase productivity and improve overall work mood?
+          <span>(check all that apply)</span></p>
+          <input type="checkbox" id="improve1" name="improve1" value="shorter week" />
+          <label for="improve1">4-day work week</label><br>
+          <input type="checkbox" id="improve2" name="improve2" value="pay raise" />
+          <label for="improve2">Salary Increases</label><br>
+          <input type="checkbox" id="improve3" name="improve3" value="overtime pay" />
+          <label for="improve3">Monetary compensation for overtime</label><br>
+          <input type="checkbox" id="improve4" name="improve4" value="health insurance" />
+          <label for="improve4">Better Health Insurance coverage</label>
+            </div>
+         <div class="form-group">
+          <label for= "comments">Any complaints or suggestions? Drop them here</label>
+          <textarea name= "comments" id= "comments" placeholder="Share with HR here!"></textarea>
+         </div>
+        
+         <div>
+            <input type = "submit" name = "submit" id ="submit" value = "Submit">
+            </div>
+        </form>
+    </DOCTYPE>
+        
+        
+        
+        
+          
+        
+</body>
+</html>
